@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dip"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="horizontal|vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:scrollbars="horizontal|vertical">
+
+                <TableLayout
+                    android:id="@+id/tlGridTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:background="#607D8B"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="69dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="TxnID	"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Time"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Temperature	"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Location"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="73dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Owner"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="78dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Status"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:background="#ECEFF1"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="46dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7f086.."
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2018-04-21"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="23 C"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="28 89"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="hulk"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SUCCESS"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
